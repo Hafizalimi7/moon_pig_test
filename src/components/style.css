@@ -1,0 +1,176 @@
+.appHeader {
+	width: 70%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	padding: 2rem 0rem;
+	margin: auto;
+	justify-content: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+}
+
+.logoText {
+	width: 120px;
+}
+
+.searchBarContainer {
+	flex: 2;
+	position: relative;
+}
+
+.searchBarInput {
+	flex: 1;
+	border: 2px solid #b92e4d;
+	border-radius: 8px;
+	padding-left: 16px;
+	margin: 0px;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	letter-spacing: 0px;
+	text-decoration: none;
+	display: block;
+	min-height: 48px;
+	width: 100%;
+}
+
+.searchBarIcon {
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.ListingsContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.LoadMoreButtonContainer {
+	padding: 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.LoadMoreButtonContainer > button {
+	padding: 1rem;
+	border: none;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #b92e4d;
+	border: 1px solid;
+	cursor: pointer;
+}
+
+.EmptyListingsContainer {
+	margin-top: 3.5rem;
+}
+
+.clearSearchText {
+	text-align: center;
+	padding: 0.5rem;
+	background-color: #fff;
+	color: #b92e4d;
+	border: 1px solid;
+	cursor: pointer;
+}
+
+.ProductDetailsContainer {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 8rem;
+}
+
+.ProductImagesContainer {
+	border: 1px solid #84879a;
+}
+
+.ProductDetailsInfo__Details {
+	font-weight: 500;
+}
+
+.ProductDetailsInfo__InStock {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ProductDetailsInfo__InStock--text {
+	margin-left: 10px;
+}
+
+.buyMe {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem;
+	background-color: #b92e4d;
+	color: #fff;
+	border: 1px solid;
+	border-radius: 8px;
+	cursor: pointer;
+	max-width: 200px;
+}
+
+.buyMeText {
+	margin-left: 10px;
+}
+
+.BackToHome {
+	position: absolute;
+	top: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.BackToHome > svg {
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.appHeader {
+		width: 80%;
+	}
+	.ProductDetailsContainer {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.appHeader {
+		display: block;
+		padding: 1rem 0rem;
+	}
+
+	.searchBarInput {
+		min-height: 36px;
+		width: 100%;
+		flex: none;
+	}
+
+	.searchBarContainer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.searchBarIcon {
+		top: 10px;
+	}
+
+	.ProductDetailsContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+}

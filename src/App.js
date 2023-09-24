@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Listings from './components/ui/listings'
+import useListings from './hooks/useListings'
+import LoadingListings from './components/ui/loadingListings'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const { listingsState } = useListings()
+
+	if (listingsState.loading) {
+		return <LoadingListings count={10} />
+	}
+	return (
+		<div className='App'>
+			<h1>App</h1>
+			<Listings listings={listingsState?.data?.Products} />
+		</div>
+	)
 }
 
 export default App;
