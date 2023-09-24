@@ -2,7 +2,7 @@ import './styles.css'
 import logo from '../space-pig.png'
 import SearchBar from './searchBar'
 
-const Header = ({ searchTerm, handleSearch, handleSubmit }) => {
+const Header = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
 	return (
 		<header className='appHeader'>
 			<div className='logo'>
@@ -18,7 +18,12 @@ const Header = ({ searchTerm, handleSearch, handleSubmit }) => {
 				</div>
 			</div>
 
-			<SearchBar searchTerm={searchTerm} handleSearch={handleSearch} handleSubmit={handleSubmit}/>
+      <SearchBar
+				searchTerm={searchTerm}
+				handleSearch={handleSearch}
+				handleClearSearch={handleClearSearch}
+				handleSubmit={handleSubmit}
+			/>
 		</header>
 	)
 }

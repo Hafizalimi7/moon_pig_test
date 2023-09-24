@@ -1,21 +1,21 @@
 import './styles.css'
 
-const SearchBar = ({ searchTerm, handleSearch, handleSubmit }) => {
+const SearchBar = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
 	return (
 		<form className='searchBarContainer' onSubmit={handleSubmit}>
-			<input className='searchBarInput' type='text' placeholder='Search...' onChange={handleSearch} />
+			<input className='searchBarInput' type='text' placeholder='Search...' value={searchTerm} onChange={handleSearch} />			
 			{searchTerm && (
-				<div className='searchBarIcon'>
+				<div className='searchBarIcon' onClick={handleClearSearch}>
 					<svg
 						stroke='#84879a'
 						fill='#84879a'
-						stroke-width='0'
-						viewBox='0 0 16 16'
+						strokeWidth='0'
+						viewBox='0 0 24 24'
 						height='1.5em'
 						width='1.5em'
 						xmlns='http://www.w3.org/2000/svg'>
-						<path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'></path>
-					</svg>
+		<path fill='none' d='M0 0h24v24H0V0z'></path>
+						<path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'></path>					</svg>
 				</div>
 			)}
 		</form>

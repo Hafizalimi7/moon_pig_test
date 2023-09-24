@@ -2,23 +2,34 @@
 	padding: 3rem;
 }
 
-.ListingsContainer {
+.loadingDetailsContainer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 1.25rem;
 	align-items: center;
 	justify-content: center;
+    	/* align-items: center; */
+	gap: 2rem;
+	margin-top: 8rem;
+}
+
+.loadingBuyMe {
+	display: flex;
+	width: 250px;
+	height: 50px;
+	/* margin-bottom: 2rem; */
+	margin-top: 3.25rem;
 }
 
 .cardContainer {
+    text-decoration: none;
+	color: #000;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	width: 350px;
-	height: 350px;
-	padding: 1rem;
+    width: 250px;
+	min-height: 450px;
 	background-color: rgb(255, 255, 255);
 	box-shadow: rgba(0, 3, 77, 0.15) 0px 3px 8px 0px;
 	border-radius: 8px;
@@ -34,7 +45,44 @@
 .cardTitle {
 	text-align: center;
 	margin-top: 0.5rem;
+	font-weight: 500;
+	padding: 1rem;
+}
+
+.cardImage {
+	border-radius: 8px 8px 0px 0px;
+}
+
+.cardRatingContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cardRatingReviewCount {
+	margin-left: 0.5rem;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.cardPrice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 1.25rem;
+}
+
+.cardPrice > span {
+	font-weight: bolder;
+	margin: 1px;
+	font-size: 1.125rem;
+}
+
+.cardLink {
+	text-decoration: underline;
+	color: #b92e4d;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 .containerClassName {

@@ -8,6 +8,6 @@ export const getCardListings = () => {
 
 export const getCardDetails = moonpigProductNo => {
 	return Request.get({
-		url: `/${moonpigProductNo}.json`,
+		url: `/product/${moonpigProductNo}.json`,
 	})
 }
