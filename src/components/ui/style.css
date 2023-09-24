@@ -1,16 +1,67 @@
 .loadingListingsContainer {
-	padding: 6rem;
+	padding: 3rem;
 }
 
-.containerClassName{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem; 
+.ListingsContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+	padding: 1rem;
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgba(0, 3, 77, 0.15) 0px 3px 8px 0px;
+	border-radius: 8px;
+	transition: all 0.2s ease-out;
+}
+
+.cardContainer:hover {
+	transform: translateY(-4px);
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+}
+
+.cardTitle {
+	text-align: center;
+	margin-top: 0.5rem;
+	font-weight: 700;
+}
+
+.containerClassName {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.searchBarLoadingClassName {
+	display: flex;
+	width: 50%;
+	height: 50px;
+	margin-bottom: 2rem;
+	margin: auto;
+	margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1200px) {
 	.loadingListingsContainer {
-		padding: 2rem;
+		padding: 1rem;
+	}
+
+	.searchBarLoadingClassName {
+		width: 100%;
+		margin-bottom: 1rem;
 	}
 }

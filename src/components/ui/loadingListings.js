@@ -6,6 +6,7 @@ import './styles.css'
 const LoadingListings = ({ count }) => {
 	return (
 		<div className='loadingListingsContainer'>
+			<Skeleton containerClassName='searchBarLoadingClassName' />
 			<Skeleton containerClassName='containerClassName' count={count} width={300} height={300} />
 		</div>
 	)

@@ -8,7 +8,7 @@ const useListings = () => {
 		const getListings = async () => {
 			try {
 				const response = await getCardListings()
-				setlistingsState({ data: response.data, loading: true })
+				setlistingsState({ data: response.data, loading: false })
 			} catch (error) {
 				setlistingsState({ error: error, loading: false })
 			}
