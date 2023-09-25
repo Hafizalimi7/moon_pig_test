@@ -69,7 +69,12 @@ Start the application locally
 npm start
 ```
 
+```bash for aws
+npm run build && npm run deploy
+```
+
 Your app should now be running at `http://localhost:3000` ie. If the port is available
+Or to view on amazon s3 http://mpig-test.s3-website.eu-west-2.amazonaws.com/
 
 ### Running Tests
 
@@ -81,11 +86,10 @@ npm run test
 
 ## Screenshots
 
-<img width="1276" alt="Screenshot 2023-09-24 at 21 13 27" src="https://github.com/muriukialex/Moonpig-Tech-Test-Frontend/assets/51236424/4b5a6e9a-4c87-4942-b5a0-fe0977223a94">
+![](screenshots/a.png)
 
-<img width="1356" alt="Screenshot 2023-09-24 at 21 17 43" src="https://github.com/muriukialex/Moonpig-Tech-Test-Frontend/assets/51236424/1425202f-2089-43c1-a6d8-eb72af1a0de6">
+![](screenshots/b.png)
 
-
-<img width="1301" alt="Screenshot 2023-09-24 at 21 17 25" src="https://github.com/muriukialex/Moonpig-Tech-Test-Frontend/assets/51236424/4b77b4de-52ec-472e-b1ad-f4669e5ad018">
+![](screenshots/c.png)
 
 

@@ -1,6 +1,6 @@
 import './styles.css'
-import logo from '../space-pig.png'
-import Search from './search'
+import logo from '../img/space-pig.png' 
+import Search from './searchBar'
 
 const Header = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
 	return (

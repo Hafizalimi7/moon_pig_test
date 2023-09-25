@@ -1,6 +1,6 @@
 import './styles.css'
 
-const Search = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
+const SearchBar = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
 	return (
 		<form className='searchBarContainer' onSubmit={handleSubmit}>
 			<input className='searchBarInput' type='text' placeholder='Search...' value={searchTerm} onChange={handleSearch} />
@@ -23,4 +23,4 @@ const Search = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) =
 	)
 }
 
-export default Search
+export default SearchBar
