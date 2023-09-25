@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Details from './website/details'
 import ProductDetails from './components/productDetails'
+
 // Mock the useDetailsData hook
 jest.mock('../src/hooks/useDetailsData', () => ({
 	__esModule: true,

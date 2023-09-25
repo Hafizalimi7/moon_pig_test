@@ -18,7 +18,7 @@ const Header = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) =
 				</div>
 			</div>
 
-      <SearchBar
+			<SearchBar
 				searchTerm={searchTerm}
 				handleSearch={handleSearch}
 				handleClearSearch={handleClearSearch}

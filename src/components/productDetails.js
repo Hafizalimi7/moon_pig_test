@@ -73,7 +73,7 @@ const ProductDetails = ({ SizeName, Title, Description, AvailableSizes, Addition
 							<svg
 								stroke='#fff'
 								fill='none'
-								strokeWidthh='2'
+								strokeWidth='2'
 								viewBox='0 0 24 24'
 								aria-hidden='true'
 								height='1em'
@@ -93,7 +93,7 @@ const ProductDetails = ({ SizeName, Title, Description, AvailableSizes, Addition
 				<svg
 					stroke='#b92e4d'
 					fill='#b92e4d'
-					stroke-width='0'
+					strokeWidth='0'
 					viewBox='0 0 16 16'
 					height='1em'
 					width='1em'
@@ -109,4 +109,3 @@ const ProductDetails = ({ SizeName, Title, Description, AvailableSizes, Addition
 }
 
 export default ProductDetails
-
