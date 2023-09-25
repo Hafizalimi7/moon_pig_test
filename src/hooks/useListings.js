@@ -7,7 +7,9 @@ const useListings = () => {
 	useEffect(() => {
 		const getListings = async () => {
 			try {
+				// Fetch listings using 'getCardListings'.
 				const response = await getCardListings()
+				// Update 'listingsState' with the response data.
 				setlistingsState({ data: response.data, loading: false })
 			} catch (error) {
 				setlistingsState({ error: error, loading: false })

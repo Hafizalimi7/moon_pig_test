@@ -5,7 +5,8 @@ import ReactHtmlParser from 'html-react-parser'
 
 const ProductDetails = ({ SizeName, Title, Description, AvailableSizes, AdditionalInfo, InStock, ThumbnailUrl, ImageUrls }) => {
 	const carouselImageURLs = [ThumbnailUrl]
-
+	
+	// Extract ImageUrls from an array of objects and create a new array of URLs.
 	ImageUrls?.forEach(item => {
 		carouselImageURLs.push(item.ImageUrl)
 	})
