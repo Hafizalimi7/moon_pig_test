@@ -1,6 +1,6 @@
 import './styles.css'
 import logo from '../space-pig.png'
-import SearchBar from './searchBar'
+import Search from './search'
 
 const Header = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) => {
 	return (
@@ -18,7 +18,7 @@ const Header = ({ searchTerm, handleSearch, handleClearSearch, handleSubmit }) =
 				</div>
 			</div>
 
-			<SearchBar
+			<Search
 				searchTerm={searchTerm}
 				handleSearch={handleSearch}
 				handleClearSearch={handleClearSearch}
